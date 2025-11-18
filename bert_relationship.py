@@ -13,8 +13,8 @@ from sklearn.metrics import accuracy_score, precision_recall_fscore_support, cla
 # -------------------------
 # Config / Filepaths
 # -------------------------
-TWEETS_CSV = r"C:\Users\kaupk\Downloads\main_tweets.csv"
-REPLIES_CSV = r"C:\Users\kaupk\Downloads\all_replies.csv"
+TWEETS_CSV = r"main_tweets.csv"
+REPLIES_CSV = r"all_replies.csv"
 OUTPUT_DIR = "bert_reply_sentiment_output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -191,3 +191,4 @@ print(confusion_matrix(y_test, pred_labels))
 
 # Save model
 trainer.save_model(OUTPUT_DIR)
+
